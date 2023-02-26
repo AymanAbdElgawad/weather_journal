@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Weather Journal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+ <body>
+  
+    <div id="header">Weather Journal </div> 
+  
+  <div id = "app">
+  
+  <form >
+    <div id="head">Generate Data</div>
+    <label id="cityCodelabel" for="cityCode">City Code :</label>
+    <select  id="cityCode" >
+      <option value="zip">city ZIP code</option>
+      <option value="id">city id</option>
+      <option value="q">city name</option>
+    </select>
+    <input class= "myInput" type="number" id="cityData" placeholder="enter city zip code here">
+    <label id="temperaturelabel" for="temperature">Temperature :</label>
+    <select  id="temperature" >
+      <option value="imperial">Fahrenheit</option>
+      <option value="metric">Celsius</option>
+      <option value="standard">Kelvin </option>
+    </select>
+    <label id="feelingslabel" for="feelings">How are you feeling today?</label>
+    <textarea class= "myInput" type="text" id="feelings" placeholder="Enter your feelings here" rows="9" cols="50"></textarea>
+    <button  id="position" type = "button">Generate by position</button>
+    <button  id="generate" type = "button"> Generate </button>
+  </form>
+  <div class ="holder_entry">
+    <div id = "city_name">city name</div>
+    <div id="main">Weather</div>
+    <div id="description">description</div> 
+    <div id="visibility">visibility : <span>-</span> km </div>
+    <div id = "Feeling">Feeling :</div>
+   <div id = "temp">temperature: <span id="span">-</span>°<span id="tempUnits">-</span></div>
+   <img id="icon" src="http://openweathermap.org/img/w/04d.png" alt="">
+   <div id = "feeling"></div>
+  
+  </div>
+  <div id="timeAndDate" >
+    <div id="Time"></div>
+    <div id = "Date"></div>
+  </div> 
+  <div id="error" >error
+  </div> 
+ </div>
+<script src="app.js" type="text/javascript"></script>
+
+</body>
+</html>

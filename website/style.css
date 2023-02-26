@@ -1,0 +1,275 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#header{
+    padding: 0;
+    font-size: 4vw;
+    padding: 1vw;
+}
+body{
+    background-image:  linear-gradient(  to top , #db0cf2,rgb(40, 40, 253) 15% , #000040 60%);
+    background-attachment: fixed;
+    color: rgb(248, 247, 248);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#app{
+
+    position: fixed;
+    top: 10%;
+
+    height: 80%;
+    width: 100%;
+    background-image: url("./img.png");
+    display: grid;
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    grid-template-rows: repeat(100 , 1%);
+    grid-template-columns: repeat(100 , 1%);
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    grid-row:1 /101;
+    grid-column: 1/ 50;
+background-color: rgba(54, 54, 84, 0.704);
+height: 35vw;
+width: 45vw;
+    color: #f9f9f9;
+
+        display: grid;
+        overflow: hidden;
+        border-radius:3vw ;
+       align-items: center;
+       justify-content: center;
+    font-size: 1vw;
+    margin: 5%;
+    grid-template-rows: repeat(100 , 1%);
+    grid-template-columns: repeat(100 , 1%);
+}
+
+#generate{
+    grid-row: 85/100;
+    grid-column: 56/101;
+    font-size: 2em;
+    height: 3em;
+    cursor: pointer;
+    border-radius: 0em 0em 1.5em 0em;
+ }
+ #generate:hover , #position:hover{
+    background-color: #00ff00;
+    color: azure;
+}
+
+#position{
+    grid-row: 85/100;
+    grid-column: 1/44;
+    font-size: 2em;
+    height: 3em;
+    cursor: pointer;
+    border-radius: 0em 0em 0em 1.5em;
+} 
+#feelings {
+    grid-row: 60/90;
+    grid-column: 10/90;
+    height: 2em;
+    font-size: 2em;
+    
+}
+#cityData  {
+    grid-row:28/45;
+    grid-column: 10/90;
+    height: 2em;
+    font-size: 2em;
+    
+}
+#temperature {
+grid-row: 50/55;
+    grid-column: 50/96;
+    height: 2em;
+    font-size: 2em;
+    
+}
+#temperaturelabel{
+    grid-row: 55/55;
+    grid-column: 3/90;
+    height: 2em;
+    font-size: 2.4em;
+    
+}
+
+#cityCode {
+    grid-row: 20/25;
+        grid-column: 50/96;
+        height: 2em;
+        font-size: 2em;
+        
+    }
+#cityCodelabel{
+        grid-row: 25/25;
+        grid-column: 3/90;
+        height: 2em;
+        font-size: 2.5em;
+        
+    }
+#feelingslabel{
+    grid-row: 65/70;
+    grid-column: 3/90;
+    height: 2em;
+    font-size: 2em;
+    
+}
+#head{
+    grid-row: 1/20;
+    grid-column: 1/101;
+    height: 2em;
+    font-size: 3em;
+    text-align: center;
+    
+
+}
+.holder_entry{
+    margin: 5%;
+    grid-row: 1/101;
+    grid-column: 50/101;
+    background-color: rgba(54, 54, 84, 0.704);
+    height: 35vw;
+    width: 45vw;
+    color: #fdfafa;
+
+        display: grid;
+        overflow: hidden;
+        border-radius:3vw ;
+        grid-template-rows: repeat(100 , 1%);
+        grid-template-columns: repeat(100 , 1%);
+
+        text-align: center;
+       justify-content: center;
+       align-self: center ;
+       font-size: 1vw;
+
+}
+#city_name{
+    grid-row: 5/5;
+    grid-column: 1/101;
+    font-size: 4em;
+}
+#main{
+    grid-row: 35/45;
+    grid-column: 11/20;
+    font-size: 3.3em;
+
+}
+#description{
+    
+    grid-row: 50/60;
+    grid-column: 1/40;
+    font-size: 2em;
+    text-align: center;
+
+}
+#temp{
+    grid-row: 30/40;
+    grid-column: 50/99;
+    font-size: 2.5em;
+    align-self: center;
+ 
+}
+#temp #span{
+    font-size: larger;
+}
+#tempUnits{
+    
+ font-size: 0.5em;
+ padding-bottom: 10em;
+
+}
+#visibility{
+      
+    grid-row: 45/50;
+    grid-column: 50/99;
+    font-size: 2.5em;
+    align-self: center;
+
+}
+#visibility span{
+    font-size: larger;
+}
+
+#Feeling{
+    grid-row: 65/70;
+    grid-column: 5/101;
+    font-size: 2.5em;
+    text-align: left;
+}
+#feeling{
+    
+    grid-row: 75/101;
+    grid-column: 8/98;
+    text-align: left;
+    font-size: 2em;
+    overflow:auto;
+
+}
+#icon{
+    width: 200%;
+    grid-row: 20/30;
+    grid-column: 11/20;
+}
+#timeAndDate{
+    position: fixed;
+    text-align: right;
+   top:0;
+   right: 0; 
+   padding:1vw;
+   font-size: 2vw;
+
+}
+#error{
+    opacity:0 ;
+    position: fixed;
+    text-align: left;
+    background-color: rgb(255, 242, 0);
+    color: rgb(222, 0, 0);
+   bottom: 1%;
+   left: 2.4%; 
+   padding:4px 30px 4px 15px;
+   border: solid #770000;
+   border-radius: 100px;
+   font-size: 2.0vw;
+   transition: opacity  1s ;
+}
+
+@media screen and (max-width: 360px) {
+    form{
+        grid-row:1 /50;
+        grid-column:1/ 101;
+        font-size: 2vw;
+        height: 70vw;
+        width: 90vw;
+        border-radius:6vw ;
+            
+        
+        
+
+    }
+    .holder_entry{
+        grid-row: 51/101;
+        grid-column: 1/101;
+        font-size: 2vw;
+        height: 70vw;
+        width: 90vw;
+        border-radius:6vw ;
+    
+    }
+    #error{
+        font-size: 2vw;
+    }
+    
+  }
+  
