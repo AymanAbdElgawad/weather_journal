@@ -74,10 +74,13 @@ This app displays the weather in the city of the user's choice by zip code, ID o
 2. open your cdm and change directory 'cd' to project folder .
 
         cd 
-3. run the server
+3. intsall packages 
+        npm install
+4. run the server
         
         node server.js
-4. open this path `http//127.0.0.1:8080` in your browser.
+
+5. open this path `http//127.0.0.1:8080` in your browser.
 
 [(Back to top)](#table-of-contents)
 
