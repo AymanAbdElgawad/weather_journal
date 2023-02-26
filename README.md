@@ -75,6 +75,7 @@ This app displays the weather in the city of the user's choice by zip code, ID o
 
         cd 
 3. intsall packages 
+
         npm install
 4. run the server
         
